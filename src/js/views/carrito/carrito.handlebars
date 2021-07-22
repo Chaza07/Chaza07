@@ -1,0 +1,27 @@
+{{#each mercaderias}}
+<div class="card-item flex items-center hover:bg-gray-100 -mx-8 px-6 py-5" >
+    <div class="flex w-2/5"> <!-- product -->
+    <div class="w-20">
+        <img class="h-24" src={{imagen}} alt="">
+    </div>
+    <div class="flex flex-col justify-between ml-4 flex-grow">
+        <span class="font-bold text-sm">{{nombre}}</span>
+        <span class="text-red-500 text-xs">{{tipoMercaderia}}</span>
+        <button class="btn-remove font-semibold hover:text-red-500 text-gray-500 text-xs focus:outline-none" id={{mercaderiaId}}>Eliminar</button>
+    </div>
+    </div>
+    <div class="flex justify-center w-1/5">
+    
+
+        <div class="custom-number-input h-10 w-32 rounded-lg ">
+            <div class="flex flex-row h-10 w-full rounded-lg relative bg-transparent mt-1">
+                <input type="number" id="{{mercaderiaId}}"  class="card-items-quantity outline-none focus:outline-none text-center w-full bg-gray-300 font-semibold text-md hover:text-black focus:text-black  md:text-basecursor-default flex items-center text-gray-700 rounded-lg " name="custom-input-number" value="{{cantidad}}"></input>
+            </div>
+        </div>
+
+    
+    </div>
+    
+    <span class="card-price-total text-center w-1/5 font-semibold text-sm">${{precio}}</span>
+</div>
+{{/each}}

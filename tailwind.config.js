@@ -1,4 +1,5 @@
 module.exports = {
+    
     purge: {
         enabled: false,
         mode: "all",

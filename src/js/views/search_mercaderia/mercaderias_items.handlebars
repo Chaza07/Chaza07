@@ -1,0 +1,35 @@
+<div class="font-h1 mb-4 mt-6">Mercaderias</div>
+{{#each mercaderias}}
+<div class="mercaderia-item lg:container mx-auto mb-2 mt-6">
+    <div class="bg-yellow-100 rounded overflow-hidden border border-gray-300 hover:shadow flex flex-row">
+        <div class="mercaderia-item-image w-64 flex-none  ">
+            <img src={{imagen}} class="h-full w-full object-cover">
+        </div>
+        <div class="py-1 px-4 flex-grow flex flex-col w-full">
+            <h4 class="mercaderia-item-nombre font-h2  text-black truncate">{{nombre}}</h4>
+            <div>
+                <p class="font-h3 text-black mt-2">N°: {{mercaderiaId}}</p>
+            </div>
+    
+            <div class="mt-2">
+                <div class="mt-1 flex flex-col  ">
+                    <p class="mercaderia-item-tipo font-h3 text-green-500 mt-1 ">{{tipoMercaderia}}</p>
+                    <p class="mercaderia-item-ingredientes font-h5 text-black mt-1 ">Ingredientes: {{ingredientes}}</p>
+                    <p class="mercaderia-item-preparacion font-h5 text-black mt-1">Preparacion: {{preparacion}}</p>
+                    <p class="mercaderia-item-precio font-h5 text-black mt-1">Precio: ${{precio}}</p>
+                </div>
+                <div class="mt-1 flex flex-row">
+                </div>
+            </div>
+            <!--
+            <div>
+                <a href="" class="comandButton" type="submit" id="{{mercaderiaId}}">Añadir al carrito</a>
+            </div>
+            -->
+            <div>
+                <button class="mercaderia-add-button comandButton text-black" type="submit" id="{{mercaderiaId}}">Añadir al carrito</button>
+            </div>
+        </div>
+    </div>
+</div>
+{{/each}}

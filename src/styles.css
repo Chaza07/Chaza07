@@ -2,6 +2,99 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-.main-background {
-    background: url("./img/argentina/3333140.jpg") no-repeat center;
+#navegationbar{
+    @apply bg-yellow-100 flex justify-between lg:justify-start items-center;
+}
+
+#menuNav{
+    @apply  flex items-center  gap-5;
+}
+
+#conteinerFooter{
+    @apply justify-center lg:container mx-auto flex flex-none divide-x-2;
+}
+
+#conteinerFooter-sub{
+    @apply px-3 my-10 flex-shrink bg-gray-800;
+}
+
+.mobile-linkss{
+    @apply hidden w-full absolute z-50 left-0 text-center bg-gray-600 mt-0;
+}
+
+.MenuHidden{
+    @apply lg:block hidden;
+}
+
+.MenuAppear{
+    @apply block lg:hidden;
+}
+
+.refButton{
+    @apply my-4 inline-block link-border;
+}
+
+.comandButton{
+    @apply bg-yellow-400 my-4 inline-block link-border focus:outline-none text-white;
+}
+
+.carritoButton{
+    @apply border-4 border-red-700 text-white font-bold p-2 rounded-full hover:bg-white hover:text-black transition duration-500;
+}
+
+.link{
+    @apply text-white block p-5 font-bold hover:text-yellow-500;
+}
+
+.link-border{
+    @apply border-4 border-yellow-400 text-yellow-600 font-bold p-2 rounded-sm hover:bg-white hover:text-black transition duration-500 outline-none;
+}
+
+
+.font-h1 {
+    @apply text-3xl font-semibold tracking-tighter;
+}
+
+.font-h2 {
+    @apply text-2xl font-semibold tracking-wide;
+}
+
+.font-h3 {
+    @apply text-xl font-bold tracking-normal;
+}
+
+.font-h4 {
+    @apply text-lg font-bold tracking-normal;
+}
+
+.font-h5 {
+    @apply text-base font-semibold tracking-normal;
+}
+
+.font-h6 {
+    @apply text-base font-semibold tracking-tight;
+}
+
+.font-subtitle {
+    @apply text-base font-medium tracking-normal;
+}
+
+.font-subtitle2 {
+    @apply text-sm font-semibold tracking-normal;
+}
+
+.font-p {
+    @apply text-base font-medium tracking-normal;
+}
+
+.font-overline {
+    @apply text-base font-normal tracking-widest;
+}
+
+.font-btn {
+    @apply text-lg font-semibold tracking-normal;
+}
+
+.logo-image{
+    
 }
